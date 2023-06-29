@@ -184,10 +184,49 @@ const updateUser = async (req, res) => {
     }
 };
 
+//* Patch
+const banUser = async (req, res) => {
+    try {
+        const { id } = req.params;
+        const { ESTADO } = req.body;
+        const user = { ESTADO };
+
+        // Valida si los campos de la peticion están llenos o no
+        if (ESTADO === undefined) {
+            return res.status(400).json({ message: "Por favor ingrese su ESTADO" })
+        }
+
+        const connection = await getConnection();
+        const result = await connection.query(`CALL spBanUser('${id}','${user.ESTADO}');`);
+
+        // Valida si el recuros a sido actualizado
+        switch (result.affectedRows) {
+            case 0:
+                return res.status(400).json({ message: "Usuario no existente" });
+
+            case 1:
+                return res.status(202).json({ message: "Estado del usuario actualizado" });
+
+            default:
+                return res.status(404).json({ message: "Error, intentelo nuevamente mas tarde" });
+        }
+    } catch (error) {
+        // Manejo de errores sql
+        switch (error.errno) {
+            case 1062: // En caso de que se intente crear un recurso ya existente
+                return res.status(400).json({ message: "El DNI ingresado ya existe" })
+
+            default:
+                return res.status(500).send(error.message)
+        }
+    }
+};
+
 export const methods = {
     getUsers,
     getUser,
     addUser,
     deleteUser,
     updateUser,
+    banUser
 };
