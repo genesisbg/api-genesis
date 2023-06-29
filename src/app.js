@@ -10,7 +10,6 @@ import enviroment from "./config/enviroment";
 // Import routes
 import userRoutes from './routes/user.routes';
 import loanHeaderRoutes from './routes/loan-header.routes';
-import penaltyRoutes from './routes/penalty.routes';
 import genreRoutes from './routes/genre.routes';
 import roleRoutes from './routes/role.routes';
 import authorRoutes from './routes/author.routes';
@@ -39,7 +38,6 @@ app.use(fileUpload({
 // Routes
 app.use('/api/user',userRoutes);
 app.use('/api/loan-header',loanHeaderRoutes);
-app.use('/api/penalty',penaltyRoutes);
 app.use('/api/genre',genreRoutes);
 app.use('/api/role',roleRoutes);
 app.use('/api/author',authorRoutes);

@@ -34,8 +34,8 @@ const getDetailLoan = async (req, res) => { // Get for ID
 const addDetailLoan = async (req, res) => {
     try {
 
-        const { DESCRIPCION, COD_LIBRO, COD_ENC_PRESTAMO, COD_MULTA } = req.body;
-        const detail = { DESCRIPCION, COD_LIBRO,  COD_ENC_PRESTAMO, COD_MULTA };
+        const { DESCRIPCION, COD_LIBRO, COD_ENC_PRESTAMO, MULTA } = req.body;
+        const detail = { DESCRIPCION, COD_LIBRO,  COD_ENC_PRESTAMO, MULTA };
 
         //Valida si los campos estan vacios o no 
         if ( DESCRIPCION === undefined) {
@@ -50,13 +50,13 @@ const addDetailLoan = async (req, res) => {
             return res.status(400).json({ message: "Por favor ingrese el codigo del encabezado de prestamo." });
          };
 
-         if (COD_MULTA === undefined) {
-            return res.status(400).json({ message: "Por favor ingrese el codigo de multa." });
+         if (MULTA === undefined) {
+            return res.status(400).json({ message: "Por favor ingrese la multa." });
          };
 
         const connection = await getConnection();
 
-        await connection.query(`CALL spAddDetailLoan('${detail.DESCRIPCION}','${detail.COD_LIBRO}','${detail.COD_ENC_PRESTAMO}','${detail.COD_MULTA}');`);
+        await connection.query(`CALL spAddDetailLoan('${detail.DESCRIPCION}','${detail.COD_LIBRO}','${detail.COD_ENC_PRESTAMO}','${detail.MULTA}');`);
 
         
         res.json({ message: "Detalle de prestamo agregado" });
@@ -107,8 +107,8 @@ const deleteDetailLoan = async (req, res) => {
 const updateDetailLoan = async (req, res) => {
     try {
         const { id } = req.params;
-        const {  DESCRIPCION,COD_LIBRO, COD_ENC_PRESTAMO, COD_MULTA } = req.body;
-        const detail = {  DESCRIPCION,COD_LIBRO,  COD_ENC_PRESTAMO, COD_MULTA };
+        const {  DESCRIPCION,COD_LIBRO, COD_ENC_PRESTAMO, MULTA } = req.body;
+        const detail = {  DESCRIPCION,COD_LIBRO,  COD_ENC_PRESTAMO, MULTA };
 
         //Valida si los campos estan vacios o no 
         if ( DESCRIPCION === undefined) {
@@ -123,13 +123,13 @@ const updateDetailLoan = async (req, res) => {
              return res.status(400).json({ message: "Por favor ingrese el codigo del encabezado de prestamo." });
           };
  
-          if (COD_MULTA === undefined) {
-             return res.status(400).json({ message: "Por favor ingrese el codigo de multa." });
+          if (MULTA === undefined) {
+             return res.status(400).json({ message: "Por favor ingrese la multa." });
           };
  
 
         const connection = await getConnection();
-        const result = await connection.query(`CALL spUpdateDetailLoan('${id}','${detail.DESCRIPCION}','${detail.COD_LIBRO}','${detail.COD_ENC_PRESTAMO}','${detail.COD_MULTA}');`);
+        const result = await connection.query(`CALL spUpdateDetailLoan('${id}','${detail.DESCRIPCION}','${detail.COD_LIBRO}','${detail.COD_ENC_PRESTAMO}','${detail.MULTA}');`);
  
          //Valida si ya a sido actualizado
          switch (result.affectedRows) {
