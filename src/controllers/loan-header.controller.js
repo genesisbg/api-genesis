@@ -8,7 +8,18 @@ const getLoanHeaders = async (req, res) => { // GET ALL
         const connection = await getConnection();
         const result = await connection.query(`CALL spGetAllHeaderLoan()`); // GET = SELECT
 
-        res.json(result[0]);
+        let data = result[0];
+
+        for (let e of data) {
+            let date = new Date(e.FECHA_DEVOLUCION)
+            e.FECHA_DEVOLUCION = `${date.getFullYear()}/${date.getMonth()}/${date.getDate()}`;
+
+             date = new Date(e.FECHA_PRESTAMO)
+            e.FECHA_PRESTAMO = `${date.getFullYear()}/${date.getMonth()}/${date.getDate()}`;
+        }
+
+
+        res.json(data);
     } catch (error) {
         res.status(500).send(error.message);
     }

@@ -35,12 +35,19 @@ const getBook = async (req, res) => { // Get for ID
 //* POST
 const addBook = async (req, res) => {
     try {
-        const { SIPNOPSIS, TITULO, FECHA_PUBLICACION, NUM_SERIE, EDITORIAL, COD_GENERO, NOM_AUTOR } = req.body;
 
-        // Se requiere la imagen y se parsea a base64
-        const { IMAGEN } = req.files;
-        const imagenBuffer = IMAGEN.data;
-        const imagenBase64 = imagenBuffer.toString("base64");
+        console.log(req.body.SIPNOPSIS);
+
+       let SIPNOPSIS = req.body.SIPNOPSIS;
+
+       let  TITULO = req.body.TITULO;
+       let  FECHA_PUBLICACION = req.body.FECHA_PUBLICACION;
+       let  NUM_SERIE = req.body.NUM_SERIE;
+       let  EDITORIAL = req.body.EDITORIAL;
+       let  COD_GENERO = req.body.COD_GENERO;
+        let  NOM_AUTOR = req.body.NOM_AUTOR;
+
+        
 
         // Valida si los campos de la peticion están llenos o no
         if (SIPNOPSIS === undefined) {
@@ -70,24 +77,22 @@ const addBook = async (req, res) => {
         if (NOM_AUTOR === undefined) {
             return res.status(400).json({ message: "Por favor ingrese el AUTOR del libro" })
         }
-
+/*
         if (!req.files || Object.keys(req.files).length === 0) {
             return res.status(400).json({ message: 'No sea enviado ningun archivo' });
         }
-
-        if (IMAGEN === undefined) {
-            return res.status(400).json({ message: 'Por favor ingrese la PORTADA del libro' });
-        }
+*/
+       
 
         const book = { SIPNOPSIS, TITULO, FECHA_PUBLICACION, NUM_SERIE, EDITORIAL, COD_GENERO, NOM_AUTOR };
 
         const connection = await getConnection();
 
-        await connection.query(`CALL spAddBook('${book.SIPNOPSIS}','${book.TITULO}','${book.FECHA_PUBLICACION}','${book.NUM_SERIE}','${book.EDITORIAL}','${book.COD_GENERO}','${book.NOM_AUTOR}','${imagenBase64}');`);
+        await connection.query(`INSERT INTO libro(SIPNOPSIS, TITULO, FECHA_PUBLICACION, NUM_SERIE, EDITORIAL, COD_GENERO, NOM_AUTOR) VALUES ('${book.SIPNOPSIS}','${book.TITULO}','${book.FECHA_PUBLICACION}','${book.NUM_SERIE}','${book.EDITORIAL}','${book.COD_GENERO}','${book.NOM_AUTOR}');`);
 
         res.status(201).json({ message: 'Libro añadido' });
     } catch (error) {
-
+console.log(error);
         // Manejo de errores sql
         switch (error.errno) {
             case 1062: // En caso de que se intente crear un recurso ya existente
@@ -96,7 +101,11 @@ const addBook = async (req, res) => {
                 return res.status(400).json({ message: "Revise que el genero y autor estén registrados" })
 
             default:
-                return res.status(500).send(error.message)
+                {
+                    console.log("Here");
+                       return res.status(500).send(error.message)
+                }
+             
         }
 
     }
