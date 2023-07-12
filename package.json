@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "set NODE_ENV=developer& nodemon --exec npm run babel-node src/index.js",
     "qa": "set NODE_ENV=qa& nodemon --exec npm run babel-node src/index.js",
-    "start": "set NODE_ENV=production& nodemon --exec npm run babel-node src/index.js",
+    "start": "set NODE_ENV=production& node dist/index.js",
+    "build":"babel src --out-dir dist",
     "babel-node": "babel-node --presets=@babel/preset-env"
   },
   "author": "santiRendon",
@@ -25,6 +26,7 @@
     "@babel/cli": "^7.21.0",
     "@babel/core": "^7.21.0",
     "@babel/node": "^7.20.7",
+    "@babel/plugin-transform-runtime": "^7.22.9",
     "@babel/preset-env": "^7.20.2",
     "morgan": "^1.10.0",
     "nodemon": "^2.0.20"
