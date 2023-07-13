@@ -7,7 +7,7 @@
     "dev": "set NODE_ENV=developer& nodemon --exec npm run babel-node src/index.js",
     "qa": "set NODE_ENV=qa& nodemon --exec npm run babel-node src/index.js",
     "start": "set NODE_ENV=production& node dist/index.js",
-    "build":"babel src --out-dir dist",
+    "production":"babel src --out-dir dist",
     "babel-node": "babel-node --presets=@babel/preset-env"
   },
   "author": "santiRendon",
