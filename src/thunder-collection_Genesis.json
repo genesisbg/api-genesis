@@ -1,0 +1,1049 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "Genesis",
+    "dateExported": "2023-06-29T20:49:53.672Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "e4549915-1818-4bc1-bf90-80e3790f85cc",
+            "name": "user *",
+            "containerId": "",
+            "created": "2023-03-11T03:59:42.002Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "a452d8be-7a52-4429-8fdd-431c39df13c6",
+            "name": "penalty *",
+            "containerId": "",
+            "created": "2023-03-29T18:24:09.798Z",
+            "sortNum": 12500
+        },
+        {
+            "_id": "b4e3649b-baa5-49ca-85d5-bb59946b3e20",
+            "name": ".",
+            "containerId": "",
+            "created": "2023-03-27T20:50:41.203Z",
+            "sortNum": 15000
+        },
+        {
+            "_id": "3f5670fa-5084-4cb5-83b5-a86ef3ca673b",
+            "name": "publishing",
+            "containerId": "",
+            "created": "2023-04-23T22:17:51.450Z",
+            "sortNum": 21250
+        },
+        {
+            "_id": "89c31e1a-7ed5-4958-9db8-194a7266db88",
+            "name": "loan header *",
+            "containerId": "",
+            "created": "2023-04-06T02:15:46.172Z",
+            "sortNum": 22500
+        },
+        {
+            "_id": "14d6a910-31b8-47ad-ba42-df8a4a44468a",
+            "name": "loan detail",
+            "containerId": "",
+            "created": "2023-06-29T02:47:46.727Z",
+            "sortNum": 23750
+        },
+        {
+            "_id": "e67bf505-ecf3-440c-8916-87b3bbea3126",
+            "name": "rol *",
+            "containerId": "",
+            "created": "2023-03-28T21:10:34.447Z",
+            "sortNum": 25000
+        },
+        {
+            "_id": "68c66b20-0ca8-4bed-b05c-9ad5b4ad5af1",
+            "name": "publisher *",
+            "containerId": "",
+            "created": "2023-03-11T07:34:24.044Z",
+            "sortNum": 30000
+        },
+        {
+            "_id": "8afe5d94-9e3d-4f01-bc37-2f81cb7014ba",
+            "name": "author *",
+            "containerId": "",
+            "created": "2023-03-13T00:03:19.386Z",
+            "sortNum": 32500
+        },
+        {
+            "_id": "508632fe-310a-4b16-8588-06cd5a832036",
+            "name": "book *",
+            "containerId": "",
+            "created": "2023-05-10T06:46:53.470Z",
+            "sortNum": 35000
+        },
+        {
+            "_id": "6263e7ac-6e16-44ef-ac7d-a06679cc42f5",
+            "name": "genre *",
+            "containerId": "",
+            "created": "2023-03-13T19:46:58.981Z",
+            "sortNum": 40000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "bc850d73-5e62-4fa9-969c-5cbdecae9df4",
+            "colId": "05dbd113-e565-4a20-8ed2-85a7fcfdfdf4",
+            "containerId": "68c66b20-0ca8-4bed-b05c-9ad5b4ad5af1",
+            "name": "Get publisher for ID",
+            "url": "http://localhost:3000/api/publisher/1",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-03-11T07:35:42.345Z",
+            "modified": "2023-04-04T23:05:43.159Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "  {\n    \"NOM_EDITORIAL\": \"Letrias\",\n    \"PAIS\":\"Venezuela\",\n    \"CIUDAD\": \"Caracas\",\n    \"TELEFONO\": \"(324) 2345 434\",\n    \"DIRECCION\": null\n  }\n",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "0ce25481-166d-471f-9568-4be31079d295",
+            "colId": "05dbd113-e565-4a20-8ed2-85a7fcfdfdf4",
+            "containerId": "e67bf505-ecf3-440c-8916-87b3bbea3126",
+            "name": "Get rol for ID",
+            "url": "http://localhost:3000/api/role/2",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-03-28T21:10:34.447Z",
+            "modified": "2023-05-15T03:34:23.804Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "cc9f948b-a87b-4003-876d-fa205ebed553",
+            "colId": "05dbd113-e565-4a20-8ed2-85a7fcfdfdf4",
+            "containerId": "89c31e1a-7ed5-4958-9db8-194a7266db88",
+            "name": "Get loan header for ID",
+            "url": "http://localhost:3000/api/loan-header/2",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-04-06T02:15:46.172Z",
+            "modified": "2023-06-25T21:52:19.211Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "b0ab0e2b-262e-4dac-b37d-84a435d7a59d",
+            "colId": "05dbd113-e565-4a20-8ed2-85a7fcfdfdf4",
+            "containerId": "3f5670fa-5084-4cb5-83b5-a86ef3ca673b",
+            "name": "Get publishing for ID",
+            "url": "http://localhost:3000/api/publishing/5",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-04-23T22:17:51.450Z",
+            "modified": "2023-04-23T22:26:40.320Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "  {\n    \"COD_EDITORIAL_LIBROS\": 1,\n    \"COD_LIBRO\": 3,\n    \"COD_EDITORIAL\": 8\n  }\n",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "6923c81c-8c81-4dd8-8a0c-c4e2916ee6f9",
+            "colId": "05dbd113-e565-4a20-8ed2-85a7fcfdfdf4",
+            "containerId": "14d6a910-31b8-47ad-ba42-df8a4a44468a",
+            "name": "Get loan header for ID",
+            "url": "http://localhost:3000/api/detail-loan/4",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-06-29T02:47:46.727Z",
+            "modified": "2023-06-29T02:50:22.491Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "2b27e84c-c1f7-41a8-8e3a-ce9ec553e6a0",
+            "colId": "05dbd113-e565-4a20-8ed2-85a7fcfdfdf4",
+            "containerId": "68c66b20-0ca8-4bed-b05c-9ad5b4ad5af1",
+            "name": "Get All Publishers",
+            "url": "http://localhost:3000/api/publisher/",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-03-11T07:36:42.365Z",
+            "modified": "2023-04-04T23:05:58.077Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "  {\n    \"NOM_EDITORIAL\": \"Letrias\",\n    \"PAIS\":\"Venezuela\",\n    \"CIUDAD\": \"Caracas\",\n    \"TELEFONO\": \"(324) 2345 434\",\n    \"DIRECCION\": null\n  }\n",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "68720f07-f58a-4bf5-8023-7e92b1a4dc30",
+            "colId": "05dbd113-e565-4a20-8ed2-85a7fcfdfdf4",
+            "containerId": "e67bf505-ecf3-440c-8916-87b3bbea3126",
+            "name": "Get All roles",
+            "url": "http://localhost:3000/api/role/",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-03-28T21:10:34.448Z",
+            "modified": "2023-03-28T22:00:43.444Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "9976f472-6e40-4c4a-b636-f837799577d8",
+            "colId": "05dbd113-e565-4a20-8ed2-85a7fcfdfdf4",
+            "containerId": "89c31e1a-7ed5-4958-9db8-194a7266db88",
+            "name": "Get All loan header",
+            "url": "http://localhost:3000/api/loan-header/",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-04-06T02:15:46.173Z",
+            "modified": "2023-04-06T04:01:58.671Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "6ef8b21b-bc9c-4eae-b3c1-fbc00f9438de",
+            "colId": "05dbd113-e565-4a20-8ed2-85a7fcfdfdf4",
+            "containerId": "3f5670fa-5084-4cb5-83b5-a86ef3ca673b",
+            "name": "Get All publishings",
+            "url": "http://localhost:3000/api/publishing/",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-04-23T22:17:51.451Z",
+            "modified": "2023-04-23T22:23:26.871Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"COD_EDITORIAL_LIBROS\": 1,\n    \"COD_LIBRO\": 3,\n    \"COD_EDITORIAL\": 8\n  }",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "b9169a9e-fcb3-4dc6-a106-347ea8fb77e4",
+            "colId": "05dbd113-e565-4a20-8ed2-85a7fcfdfdf4",
+            "containerId": "14d6a910-31b8-47ad-ba42-df8a4a44468a",
+            "name": "Get All loan header",
+            "url": "http://localhost:3000/api/detail-loan/",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-06-29T02:47:46.728Z",
+            "modified": "2023-06-29T02:50:42.668Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "5243aeb3-e3f2-4c3e-9ee6-ac12306d12ff",
+            "colId": "05dbd113-e565-4a20-8ed2-85a7fcfdfdf4",
+            "containerId": "68c66b20-0ca8-4bed-b05c-9ad5b4ad5af1",
+            "name": "Post Publisher",
+            "url": "http://localhost:3000/api/publisher/",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-03-11T07:39:09.721Z",
+            "modified": "2023-04-04T23:14:00.945Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "  {\n    \"NOM_EDITORIAL\": \"123\",\n    \"PAIS\":\"3242\",\n    \"CIUDAD\": \"234\",\n    \"TELEFONO\": \"(324345 434\",\n    \"DIRECCION\": \"00 00 0\"\n  }\n",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "a5c676a7-bb07-4301-8d4b-dea5b3ade581",
+            "colId": "05dbd113-e565-4a20-8ed2-85a7fcfdfdf4",
+            "containerId": "e67bf505-ecf3-440c-8916-87b3bbea3126",
+            "name": "Add rol",
+            "url": "http://localhost:3000/api/role/",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-03-28T21:10:34.449Z",
+            "modified": "2023-05-15T03:46:59.032Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"rol\": \"autho\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "c3ec848e-3d39-4ad2-9c5c-ad2d00e3a70e",
+            "colId": "05dbd113-e565-4a20-8ed2-85a7fcfdfdf4",
+            "containerId": "89c31e1a-7ed5-4958-9db8-194a7266db88",
+            "name": "Add loan header",
+            "url": "http://localhost:3000/api/loan-header/",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-04-06T02:15:46.174Z",
+            "modified": "2023-06-29T02:28:18.395Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"FECHA_PRESTAMO\": \"2011-11-12\",\n  \"FECHA_DEVOLUCION\": \"2011-11-12\",\n  \"ESTADO\": 1,\n  \"DNI_USUARIO\": 100\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "b405fa0d-3d28-4852-8398-21258184f7ec",
+            "colId": "05dbd113-e565-4a20-8ed2-85a7fcfdfdf4",
+            "containerId": "3f5670fa-5084-4cb5-83b5-a86ef3ca673b",
+            "name": "Post publishing",
+            "url": "http://localhost:3000/api/publishing/",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-04-23T22:17:51.452Z",
+            "modified": "2023-05-24T22:53:10.566Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"COD_LIBRO\": 1,\n    \"COD_EDITORIAL\": 3\n  }",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "40eb62db-ff14-4ca2-89b2-3b3898950d39",
+            "colId": "05dbd113-e565-4a20-8ed2-85a7fcfdfdf4",
+            "containerId": "14d6a910-31b8-47ad-ba42-df8a4a44468a",
+            "name": "Add loan header",
+            "url": "http://localhost:3000/api/detail-loan/",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-06-29T02:47:46.729Z",
+            "modified": "2023-06-29T02:51:15.733Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": " {\n    \"DESCRIPCION\": \"hola\",\n    \"COD_LIBRO\": 3,\n    \"COD_ENC_PRESTAMO\": 3,\n    \"MULTA\": 100\n  }",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "d0dce803-8739-4ed1-8fd5-43375364515b",
+            "colId": "05dbd113-e565-4a20-8ed2-85a7fcfdfdf4",
+            "containerId": "68c66b20-0ca8-4bed-b05c-9ad5b4ad5af1",
+            "name": "Delete Publisher for ID",
+            "url": "http://localhost:3000/api/publisher/5",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2023-03-11T07:40:38.425Z",
+            "modified": "2023-04-04T23:28:07.508Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"NOM_EDITORIAL\": \"Let\",\n  \"PAIS\": \"Veneela\",\n  \"CIUDAD\": \"Caas\",\n  \"TELEFONO\": \"(324) 2345 434\",\n  \"DIRECCION\": null\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "b2afc35c-508e-44b4-ae1d-5a550d9045c4",
+            "colId": "05dbd113-e565-4a20-8ed2-85a7fcfdfdf4",
+            "containerId": "e67bf505-ecf3-440c-8916-87b3bbea3126",
+            "name": "Delete rol",
+            "url": "http://localhost:3000/api/role/12",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2023-03-28T21:10:34.450Z",
+            "modified": "2023-05-15T03:52:07.690Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"rol\": \"autho\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "65feb7f3-3fc4-461e-b735-783cd8dbc214",
+            "colId": "05dbd113-e565-4a20-8ed2-85a7fcfdfdf4",
+            "containerId": "89c31e1a-7ed5-4958-9db8-194a7266db88",
+            "name": "Delete loan header",
+            "url": "http://localhost:3000/api/loan-header/2",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2023-04-06T02:15:46.175Z",
+            "modified": "2023-06-25T21:54:16.766Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"FECHA_PRESTAMO\": \"2011-11-11T05:00:00.000Z\",\n  \"CANT_LIBRO\": 11,\n  \"DNI_USUARIO\": 1045856213\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "e09a5f63-47e6-4303-aaa5-10d9a3a1f46d",
+            "colId": "05dbd113-e565-4a20-8ed2-85a7fcfdfdf4",
+            "containerId": "3f5670fa-5084-4cb5-83b5-a86ef3ca673b",
+            "name": "Delete publishing",
+            "url": "http://localhost:3000/api/publishing/28",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2023-04-23T22:17:51.453Z",
+            "modified": "2023-04-23T22:23:36.925Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"COD_EDITORIAL_LIBROS\": 1,\n    \"COD_LIBRO\": 3,\n    \"COD_EDITORIAL\": 8\n  }",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "79a7fdaf-229e-4aad-89a2-fe354cfae523",
+            "colId": "05dbd113-e565-4a20-8ed2-85a7fcfdfdf4",
+            "containerId": "14d6a910-31b8-47ad-ba42-df8a4a44468a",
+            "name": "Delete loan header",
+            "url": "http://localhost:3000/api/detail-loan/4",
+            "method": "DELETE",
+            "sortNum": 40000,
+            "created": "2023-06-29T02:47:46.730Z",
+            "modified": "2023-06-29T02:51:57.541Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"FECHA_PRESTAMO\": \"2011-11-11T05:00:00.000Z\",\n  \"CANT_LIBRO\": 11,\n  \"DNI_USUARIO\": 1045856213\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "1f95889e-afd2-4877-9156-aecd35a06dc8",
+            "colId": "05dbd113-e565-4a20-8ed2-85a7fcfdfdf4",
+            "containerId": "68c66b20-0ca8-4bed-b05c-9ad5b4ad5af1",
+            "name": "Update publisher",
+            "url": "http://localhost:3000/api/publisher/8",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2023-03-11T07:44:32.035Z",
+            "modified": "2023-04-06T02:25:22.878Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "  {\n    \"NOM_EDITORIAL\": \"Let\",\n    \"PAIS\":\"Veneela\",\n    \"CIUDAD\": \"Caas\",\n    \"TELEFONO\": \"(324) 2345 434\",\n    \"DIRECCION\": null\n  }\n",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "5903b598-15ac-4711-a2a0-0885ae84b271",
+            "colId": "05dbd113-e565-4a20-8ed2-85a7fcfdfdf4",
+            "containerId": "e67bf505-ecf3-440c-8916-87b3bbea3126",
+            "name": "Update rol",
+            "url": "http://localhost:3000/api/role/9",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2023-03-28T21:10:34.451Z",
+            "modified": "2023-05-15T03:59:25.358Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"rol\": \"user\"\n}\n",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "b978982b-44e3-4969-b6ee-75865d0c3f36",
+            "colId": "05dbd113-e565-4a20-8ed2-85a7fcfdfdf4",
+            "containerId": "89c31e1a-7ed5-4958-9db8-194a7266db88",
+            "name": "Update loan header ",
+            "url": "http://localhost:3000/api/loan-header/20",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2023-04-06T02:15:46.176Z",
+            "modified": "2023-06-25T21:53:54.573Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"FECHA_PRESTAMO\": \"0000-00-00\",\n  \"ESTADO\": 78512,\n  \"DNI_USUARIO\": 1045856213\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "89fe2e1c-67a5-46d8-88f1-8ab0b385eb93",
+            "colId": "05dbd113-e565-4a20-8ed2-85a7fcfdfdf4",
+            "containerId": "3f5670fa-5084-4cb5-83b5-a86ef3ca673b",
+            "name": "Update publishing",
+            "url": "http://localhost:3000/api/publishing/28",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2023-04-23T22:17:51.454Z",
+            "modified": "2023-04-23T22:23:18.155Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"COD_LIBRO\": 4,\n    \"COD_EDITORIAL\": 8\n  }",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "453bf2d9-f2f3-43b0-ae30-374177f25eb6",
+            "colId": "05dbd113-e565-4a20-8ed2-85a7fcfdfdf4",
+            "containerId": "14d6a910-31b8-47ad-ba42-df8a4a44468a",
+            "name": "Update loan header ",
+            "url": "http://localhost:3000/api/detail-loan/5",
+            "method": "PUT",
+            "sortNum": 50000,
+            "created": "2023-06-29T02:47:46.731Z",
+            "modified": "2023-06-29T02:52:54.495Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": " {\n    \"DESCRIPCION\": \"hoala\",\n    \"COD_LIBRO\": 3,\n    \"COD_ENC_PRESTAMO\": 3,\n    \"MULTA\": 1000\n  }",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "046bbbbc-ff4c-4b9d-bd30-455c4ddc4f02",
+            "colId": "05dbd113-e565-4a20-8ed2-85a7fcfdfdf4",
+            "containerId": "8afe5d94-9e3d-4f01-bc37-2f81cb7014ba",
+            "name": "Get author",
+            "url": "http://localhost:3000/api/author/",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2023-03-13T00:03:47.948Z",
+            "modified": "2023-04-07T00:57:02.960Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "d11dd4b5-a8ac-419f-858c-28ef10f8e101",
+            "colId": "05dbd113-e565-4a20-8ed2-85a7fcfdfdf4",
+            "containerId": "508632fe-310a-4b16-8588-06cd5a832036",
+            "name": "get book",
+            "url": "http://localhost:3000/api/books/",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2023-05-10T06:46:53.470Z",
+            "modified": "2023-05-10T06:47:33.698Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "5aeda065-a06a-4da8-9c0c-c2fdfca7acee",
+            "colId": "05dbd113-e565-4a20-8ed2-85a7fcfdfdf4",
+            "containerId": "8afe5d94-9e3d-4f01-bc37-2f81cb7014ba",
+            "name": "Get author for id",
+            "url": "http://localhost:3000/api/author/7",
+            "method": "GET",
+            "sortNum": 65000,
+            "created": "2023-04-06T05:01:50.627Z",
+            "modified": "2023-05-14T03:34:08.948Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "63f0a7ef-5446-4865-9009-41bb471c218e",
+            "colId": "05dbd113-e565-4a20-8ed2-85a7fcfdfdf4",
+            "containerId": "508632fe-310a-4b16-8588-06cd5a832036",
+            "name": "Get books for id",
+            "url": "http://localhost:3000/api/books/",
+            "method": "GET",
+            "sortNum": 65000,
+            "created": "2023-05-10T06:46:53.471Z",
+            "modified": "2023-06-08T00:59:31.769Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "1ff35562-3e50-43a8-aefc-f783165f4844",
+            "colId": "05dbd113-e565-4a20-8ed2-85a7fcfdfdf4",
+            "containerId": "8afe5d94-9e3d-4f01-bc37-2f81cb7014ba",
+            "name": "Add Author",
+            "url": "http://localhost:3000/api/author/",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2023-03-13T19:42:56.195Z",
+            "modified": "2023-05-14T06:23:15.235Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"NOM_AUTOR\": \"Roberto Valos\",\n  \"FECHA_NACIMIENTO\": \"1953-04-28\",\n  \"FECHA_MUERTE\": \"2003-07-15\",\n  \"LUGAR_NACIMIENTO\": \"Santiago, Chile\",\n  \"OCUPACIONES\": \"Escritor, poeta y crítico literario\",\n  \"MOVIMIENTO_LITERARIO\": \"Infrarrealismo\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "de03a32d-9a5f-4ca7-b5e4-70969569b195",
+            "colId": "05dbd113-e565-4a20-8ed2-85a7fcfdfdf4",
+            "containerId": "508632fe-310a-4b16-8588-06cd5a832036",
+            "name": "Add book",
+            "url": "http://localhost:3000/api/books/",
+            "method": "POST",
+            "sortNum": 70000,
+            "created": "2023-05-10T06:46:53.472Z",
+            "modified": "2023-06-25T21:03:34.591Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "SIPNOPSIS",
+                        "value": "asfasfasf"
+                    },
+                    {
+                        "name": "TITULO",
+                        "value": "Mainook"
+                    },
+                    {
+                        "name": "FECHA_PUBLICACION",
+                        "value": "2001-01-01"
+                    },
+                    {
+                        "name": "NUM_SERIE",
+                        "value": "0"
+                    },
+                    {
+                        "name": "COD_GENERO",
+                        "value": "3"
+                    },
+                    {
+                        "name": "COD_AUTOR",
+                        "value": "9"
+                    },
+                    {
+                        "name": "EDITORIAL",
+                        "value": "GHJK"
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "IMAGEN",
+                        "value": "c:\\Users\\xanti\\OneDrive\\Escritorio\\eva1.png"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "c3c3fd9d-c208-4644-b695-895c22bdf54b",
+            "colId": "05dbd113-e565-4a20-8ed2-85a7fcfdfdf4",
+            "containerId": "6263e7ac-6e16-44ef-ac7d-a06679cc42f5",
+            "name": "Get genre",
+            "url": "http://localhost:3000/api/genre/13",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2023-03-13T19:47:21.727Z",
+            "modified": "2023-04-06T23:35:07.959Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "486284ad-b13e-4559-941f-b791179c48a8",
+            "colId": "05dbd113-e565-4a20-8ed2-85a7fcfdfdf4",
+            "containerId": "8afe5d94-9e3d-4f01-bc37-2f81cb7014ba",
+            "name": "Update Author",
+            "url": "http://localhost:3000/api/author/5",
+            "method": "PUT",
+            "sortNum": 80000,
+            "created": "2023-03-13T20:05:05.831Z",
+            "modified": "2023-05-14T06:37:19.346Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"NOM_AUTOR\": \"Rafael Chaparro Madiedo\",\n  \"FECHA_NACIMIENTO\": \"1963-12-23T05:00:00.000Z\",\n  \"LUGAR_NACIMIENTO\": \"Bogota, Colombia\",\n  \"FECHA_MUERTE\": \"1995-04-18T05:00:00.000Z\",\n  \"OCUPACIONES\": \"Escritor,novelista,periodista,poeta\",\n  \"MOVIMIENTO_LITERARIO\": \"Post-Boom\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "d0ab08af-d122-4fbf-9338-c5d4d23a30b5",
+            "colId": "05dbd113-e565-4a20-8ed2-85a7fcfdfdf4",
+            "containerId": "508632fe-310a-4b16-8588-06cd5a832036",
+            "name": "Update book",
+            "url": "http://localhost:3000/api/books/8",
+            "method": "PUT",
+            "sortNum": 80000,
+            "created": "2023-05-10T06:46:53.474Z",
+            "modified": "2023-06-25T21:07:14.930Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "SIPNOPSIS",
+                        "value": "mlsxnjvnjvjndsvbfbzdb"
+                    },
+                    {
+                        "name": "TITULO",
+                        "value": "prueba"
+                    },
+                    {
+                        "name": "FECHA_PUBLICACION",
+                        "value": "2011-11-08"
+                    },
+                    {
+                        "name": "NUM_SERIE",
+                        "value": "0"
+                    },
+                    {
+                        "name": "COD_GENERO",
+                        "value": "1"
+                    },
+                    {
+                        "name": "COD_AUTOR",
+                        "value": "9"
+                    },
+                    {
+                        "name": "EDITORIAL",
+                        "value": "GOLO LIBROS"
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "IMAGEN",
+                        "value": "c:\\Users\\xanti\\OneDrive\\Escritorio\\eva2.png"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "aefb0828-f380-4b9e-a4b7-f311fa9af6f4",
+            "colId": "05dbd113-e565-4a20-8ed2-85a7fcfdfdf4",
+            "containerId": "6263e7ac-6e16-44ef-ac7d-a06679cc42f5",
+            "name": "Delete genre",
+            "url": "http://localhost:3000/api/genre/14",
+            "method": "DELETE",
+            "sortNum": 82500,
+            "created": "2023-04-06T23:23:56.758Z",
+            "modified": "2023-04-06T23:24:58.852Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "4d22438e-36ce-4213-ae44-7a659f73f9c3",
+            "colId": "05dbd113-e565-4a20-8ed2-85a7fcfdfdf4",
+            "containerId": "6263e7ac-6e16-44ef-ac7d-a06679cc42f5",
+            "name": "Get all Genres",
+            "url": "http://localhost:3000/api/genre/",
+            "method": "GET",
+            "sortNum": 85000,
+            "created": "2023-04-06T23:19:59.056Z",
+            "modified": "2023-04-06T23:19:59.056Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "1c95885f-a8aa-40e0-860d-2a7f6c4ef34b",
+            "colId": "05dbd113-e565-4a20-8ed2-85a7fcfdfdf4",
+            "containerId": "6263e7ac-6e16-44ef-ac7d-a06679cc42f5",
+            "name": "Update Genre",
+            "url": "http://localhost:3000/api/genre/13",
+            "method": "PUT",
+            "sortNum": 87500,
+            "created": "2023-04-06T23:26:42.396Z",
+            "modified": "2023-04-06T23:40:34.761Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"NOMBRE\": \"Terror Psicologico\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "eccfc982-fd67-48c7-a0b2-ab6b157fa2cb",
+            "colId": "05dbd113-e565-4a20-8ed2-85a7fcfdfdf4",
+            "containerId": "6263e7ac-6e16-44ef-ac7d-a06679cc42f5",
+            "name": "Add genre",
+            "url": "http://localhost:3000/api/genre/",
+            "method": "POST",
+            "sortNum": 90000,
+            "created": "2023-03-13T19:47:40.280Z",
+            "modified": "2023-03-13T19:49:44.978Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"NOMBRE\": \"sfjasfi\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "5efee56f-faa5-4b83-b06a-7fb1157f46fb",
+            "colId": "05dbd113-e565-4a20-8ed2-85a7fcfdfdf4",
+            "containerId": "8afe5d94-9e3d-4f01-bc37-2f81cb7014ba",
+            "name": "Delete author",
+            "url": "http://localhost:3000/api/author/21",
+            "method": "DELETE",
+            "sortNum": 90000,
+            "created": "2023-04-06T05:36:04.409Z",
+            "modified": "2023-05-14T06:30:41.190Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"NOM_AUTOR\": \"Rafael Chaparro Madiedo\",\n  \"FECHA_NACIMIENTO\": \"1963-12-23T05:00:00.000Z\",\n  \"LUGAR_NACIMIENTO\": \"Bogota, Colombia\",\n  \"FECHA_MUERTE\": \"1995-04-18T05:00:00.000Z\",\n  \"OCUPACIONES\": \"Escritor,novelista,periodista,poeta\",\n  \"MOVIMIENTO_LITERARIO\": \"Post-Boom\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "d1b436aa-9039-46ee-99c8-2c33e1c2cf59",
+            "colId": "05dbd113-e565-4a20-8ed2-85a7fcfdfdf4",
+            "containerId": "508632fe-310a-4b16-8588-06cd5a832036",
+            "name": "Delete book",
+            "url": "http://localhost:3000/api/books/26",
+            "method": "DELETE",
+            "sortNum": 90000,
+            "created": "2023-05-10T06:46:53.475Z",
+            "modified": "2023-06-07T20:15:19.206Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"SIPNOPSIS\": \"Se conoce por «juego de guerra» aquel que recrea y simula un enfrentamiento armado a cualquier nivel, sujetándose a reglas para el desarrollo del mismo. El alemán Udo Berger es campeón de esta disciplina en su país. Los juegos de guerra son al tiempo su profesión y su obsesión; ocupan su vida e invaden su pensamiento a todas horas. Incluso durante el viaje que realiza con su novia Ingeborg a la Costa Brava, donde él había veraneado en su infancia, se hace instalar una gran mesa en la habitación del hotel de alemanes, Charly y Hanna, que les introducirán a un mundo oculto tras las playas y el sol. Un mundo poblado por personajes de dudosa reputación, pasados oscuros y futuros aún más enigmáticos.\",\n    \"TITULO\": \"El Tercer Reich\",\n    \"FECHA_PUBLICACION\": \"2010-04-15T05:00:00.000Z\",\n    \"NUM_SERIE\": 0,\n    \"COD_GENERO\": 1,\n    \"COD_AUTOR\": 9\n  }",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "f8583de3-0302-444e-8406-4f9d8fb6f412",
+            "colId": "05dbd113-e565-4a20-8ed2-85a7fcfdfdf4",
+            "containerId": "e4549915-1818-4bc1-bf90-80e3790f85cc",
+            "name": "getAllUser",
+            "url": "http://localhost:3000/api/user",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2023-03-27T20:49:53.043Z",
+            "modified": "2023-04-17T22:08:19.960Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "f8390164-0b20-4946-bbf5-9ab539f2f371",
+            "colId": "05dbd113-e565-4a20-8ed2-85a7fcfdfdf4",
+            "containerId": "a452d8be-7a52-4429-8fdd-431c39df13c6",
+            "name": "getAllPenalty",
+            "url": "http://localhost:3000/api/penalty",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2023-03-29T18:24:09.798Z",
+            "modified": "2023-03-29T19:20:18.243Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "116b7ece-dcc3-4af9-9565-5c8e464f177b",
+            "colId": "05dbd113-e565-4a20-8ed2-85a7fcfdfdf4",
+            "containerId": "e4549915-1818-4bc1-bf90-80e3790f85cc",
+            "name": "getUser",
+            "url": "http://localhost:3000/api/user/1",
+            "method": "GET",
+            "sortNum": 110000,
+            "created": "2023-03-27T20:50:21.211Z",
+            "modified": "2023-06-23T05:01:14.224Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "d9210b0c-cf51-4bf9-ae90-fc5facf38ce4",
+            "colId": "05dbd113-e565-4a20-8ed2-85a7fcfdfdf4",
+            "containerId": "a452d8be-7a52-4429-8fdd-431c39df13c6",
+            "name": "getPenalty",
+            "url": "http://localhost:3000/api/penalty/1",
+            "method": "GET",
+            "sortNum": 110000,
+            "created": "2023-03-29T18:24:09.800Z",
+            "modified": "2023-05-14T16:47:05.621Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "18c870a6-3ec8-44db-a88c-9d5a44dfab14",
+            "colId": "05dbd113-e565-4a20-8ed2-85a7fcfdfdf4",
+            "containerId": "e4549915-1818-4bc1-bf90-80e3790f85cc",
+            "name": "deleteUser",
+            "url": "http://localhost:3000/api/user/1200",
+            "method": "DELETE",
+            "sortNum": 115000,
+            "created": "2023-03-27T21:02:02.125Z",
+            "modified": "2023-05-09T08:07:49.647Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "8a0514e0-076d-446d-b3a5-daf994687f53",
+            "colId": "05dbd113-e565-4a20-8ed2-85a7fcfdfdf4",
+            "containerId": "a452d8be-7a52-4429-8fdd-431c39df13c6",
+            "name": "deletePenalty",
+            "url": "http://localhost:3000/api/penalty/1",
+            "method": "DELETE",
+            "sortNum": 115000,
+            "created": "2023-03-29T18:24:09.801Z",
+            "modified": "2023-05-15T02:46:51.217Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "07b41e34-0e79-459f-aa80-82010ab17f4d",
+            "colId": "05dbd113-e565-4a20-8ed2-85a7fcfdfdf4",
+            "containerId": "e4549915-1818-4bc1-bf90-80e3790f85cc",
+            "name": "banUser",
+            "url": "http://localhost:3000/api/user/1020402543",
+            "method": "PATCH",
+            "sortNum": 117500,
+            "created": "2023-06-29T20:14:17.214Z",
+            "modified": "2023-06-29T20:17:58.800Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n\"ESTADO\": \"ACTIVO\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "aa7b43b4-d1f5-450c-8573-2c0c03f34eef",
+            "colId": "05dbd113-e565-4a20-8ed2-85a7fcfdfdf4",
+            "containerId": "e4549915-1818-4bc1-bf90-80e3790f85cc",
+            "name": "addUser",
+            "url": "http://localhost:3000/api/user/",
+            "method": "POST",
+            "sortNum": 120000,
+            "created": "2023-03-27T20:51:23.566Z",
+            "modified": "2023-06-23T08:02:56.141Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n      \"DNI_USUARIO\": 1020402543,\n      \"NOM_USUARIO\": \"Santiago\",\n      \"APELL_USUARIO\": \"Rendon\",\n      \"FECHA_NAC\": \"2005-01-03\",\n      \"CONTRASENA\": \"facil\",\n      \"CORREO\": \"srendon@gmail\",\n      \"SEXO\": \"Masculino\",\n      \"ESTADO\": \"ACTIVO\",\n      \"COD_ROL\": 2\n    }",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "29c1d554-2ad6-4a09-a360-f93b7dc5c10c",
+            "colId": "05dbd113-e565-4a20-8ed2-85a7fcfdfdf4",
+            "containerId": "a452d8be-7a52-4429-8fdd-431c39df13c6",
+            "name": "addPenalty",
+            "url": "http://localhost:3000/api/penalty/",
+            "method": "POST",
+            "sortNum": 120000,
+            "created": "2023-03-29T18:24:09.802Z",
+            "modified": "2023-05-14T16:58:38.416Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"FECHA_INICIO\": \"2023-08-03\",\n  \"FECHA_IN\": \"2023-12-04\",\n  \"VALOR\": 5078\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "44c67e1d-fccd-450f-b10f-83dfe2be0f4d",
+            "colId": "05dbd113-e565-4a20-8ed2-85a7fcfdfdf4",
+            "containerId": "e4549915-1818-4bc1-bf90-80e3790f85cc",
+            "name": "updateUser",
+            "url": "http://localhost:3000/api/user/1088",
+            "method": "PUT",
+            "sortNum": 130000,
+            "created": "2023-03-27T21:10:13.969Z",
+            "modified": "2023-06-23T05:16:33.660Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "  {\n    \"NOM_USUARIO\": \"4\",\n    \"APELL_USUARIO\": \"21\",\n    \"FECHA_NAC\": \"2005-02-11\",\n    \"CONTRASEA\": \"4\",\n    \"CORREO\": \"srecss@saf\",\n    \"SEXO\": \"2\",\n    \"ESTADO\": \"5\",\n    \"COD_ROL\": 1\n  }",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "98771c31-db53-47e8-9ae9-63dffdc66a2b",
+            "colId": "05dbd113-e565-4a20-8ed2-85a7fcfdfdf4",
+            "containerId": "a452d8be-7a52-4429-8fdd-431c39df13c6",
+            "name": "updatePenalty",
+            "url": "http://localhost:3000/api/penalty/6",
+            "method": "PUT",
+            "sortNum": 130000,
+            "created": "2023-03-29T18:24:09.803Z",
+            "modified": "2023-05-15T03:04:15.406Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"FECHA_INICIO\": \"2023-01-03\",\n  \"FECHA_FIN\": \"2023-02-04\",\n  \"VALOR\": 5050\n}",
+                "form": []
+            },
+            "tests": []
+        }
+    ],
+    "settings": {
+        "headers": [],
+        "tests": [],
+        "options": {
+            "baseUrl": "http://localhost:6491/api"
+        }
+    }
+}

@@ -1,0 +1,5 @@
+// compilador de codigo a una version general que la mayoria de navegadores entiendan
+{
+    "presets": ["@babel/preset-env"],
+    "plugins": ["@babel/transform-runtime"]
+}
