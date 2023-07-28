@@ -36,9 +36,9 @@ var getLoanHeaders = /*#__PURE__*/function () {
             for (_iterator.s(); !(_step = _iterator.n()).done;) {
               e = _step.value;
               date = new Date(e.FECHA_DEVOLUCION);
-              e.FECHA_DEVOLUCION = "".concat(date.getFullYear(), "/").concat(date.getMonth(), "/").concat(date.getDate());
+              e.FECHA_DEVOLUCION = "".concat(date.getFullYear(), "/").concat(date.getMonth() + 1, "/").concat(date.getDate());
               date = new Date(e.FECHA_PRESTAMO);
-              e.FECHA_PRESTAMO = "".concat(date.getFullYear(), "/").concat(date.getMonth(), "/").concat(date.getDate());
+              e.FECHA_PRESTAMO = "".concat(date.getFullYear(), "/").concat(date.getMonth() + 1, "/").concat(date.getDate());
             }
           } catch (err) {
             _iterator.e(err);
